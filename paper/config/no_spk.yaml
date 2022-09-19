@@ -1,0 +1,5 @@
+---
+saved_path: "checkpoints/other"
+model:
+  use_spk: False
+  use_mel: True

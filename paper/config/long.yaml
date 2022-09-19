@@ -1,0 +1,4 @@
+---
+saved_path: "checkpoints/other"
+model:
+  core: "Longformer"
