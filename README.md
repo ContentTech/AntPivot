@@ -5,27 +5,50 @@
 - 安装方法：说明如何快速上手使用该项目
 - 使用方法：列出本项目能够提供的功能以及使用这些功能的方法
 
-  1.环境依赖
+1. 环境依赖
+
     torch
+
     sentence-transformers
+
     transformers
  
-  2. 数据准备
+2. 数据准备
    
-   下载数据，并到data目录下
+   从如下链接中下载训练集(train),验证集合(eval),测试集合(test),放到data目录,目录结构如下:
+
+   url链接文件：https://www.aliyundrive.com/s/8HAwJqwyNUr
+
+	|-- data
+		|-- train
+			|-- asr
+			|-- label
+			|-- audio
+		|-- eval
+			|-- asr
+			|--label
+			|--audio
+		|-- test
+			|-- asr
+			|--label
+			|--audio
+
+	运行如下命令，生成数据
 
    ``` python paper/prepro/preprocess_label4.py ```
     
 
-  3. 训练
+3. 训练
+
+    模型配置文件存放在paper/config 目录
   
      ``` cd paper ```
 
-     ``` python main.py --config ${config_file} ```
+     ``` python main.py --config ${配置文件名} ```
 
-  4.测试
+4. 测试
     
-     ``` python main.py --config ${config_file} --eval-epoch ${epoch_num} ```
+     ``` python main.py --config ${配置文件名} --eval-epoch ${评测模型迭代次数} ```
  
 
 ## 附加内容
