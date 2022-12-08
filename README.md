@@ -13,7 +13,7 @@ AntPivot is a novel architecture via chunked attention mechanism for the task of
 
     torch==1.5.0
 
-    sentence-transformers==
+    sentence-transformers
 
     transformers==4.9.1
  
